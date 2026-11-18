@@ -565,6 +565,11 @@ section.sec .bog{font-size:2.6rem;margin-bottom:.1rem}
 .cl3 .nom3{white-space:nowrap;font-family:var(--script);font-size:12cqw;line-height:1.25;padding-top:.1em;color:#fff3dc;text-shadow:0 0 18px rgba(255,200,120,.55),0 2px 10px rgba(0,0,0,.7)}
 .cl3 .orn{width:34cqw;height:4cqw;margin:1cqw auto 2cqw;color:#f1cf86}
 .cl3 .gr3{font-style:italic;font-size:4.4cqw;line-height:1.45;color:#fff7ea;text-shadow:0 1px 8px rgba(0,0,0,.85)}
+
+/* ventanas con foto fija de fondo (parallax, funciona también en iPhone) */
+.pwin{position:relative;height:92vh;height:92svh;clip-path:inset(0);-webkit-clip-path:inset(0);background:#160f0a}
+.pwin .pf{position:fixed;inset:0;background-position:center 35%;background-size:cover;background-repeat:no-repeat}
+@media (min-width:600px){.pwin .pf{left:50%;width:560px;transform:translateX(-50%)}}
 </style>
 </head>
 <body class="locked">
@@ -607,6 +612,9 @@ section.sec .bog{font-size:2.6rem;margin-bottom:.1rem}
     <p class="lead it frase"><span class="mx">mis 15 años.</span></p>
     </div>
   </section>
+
+  <!-- FOTO 1: fija de fondo -->
+  <div class="pwin" role="img" aria-label="Escena de cuento con rosa encantada"><div class="pf" style="background-image:url(foto1.webp)"></div></div>
 
   <!-- CALENDARIO -->
   <section class="calimg reveal">
